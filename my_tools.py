@@ -37,8 +37,8 @@ class GmailTool:
             snippet = txt.get("snippet", "No content snippet available.")
             output.append(f"Subject: {subject}\nContent: {snippet}\n---")
 
-        print("Subjects and snippets of the unread emails:")
-        for item in output:
-            print(item)
+        # print("Subjects and snippets of emails:")
+        # for item in output:
+        #     print(item)
 
         return "\n".join(output)

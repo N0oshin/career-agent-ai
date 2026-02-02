@@ -32,7 +32,7 @@ check_emails_task = Task(
     description="""1. Use the fetch_job_emails tool to get all emails from today.
     2. Read through the subjects and snippets provided.
     3. Filter out non-job related emails (newsletters, social media, etc.).
-    4. Focus only on: interview invites and job postings.
+    4. Focus only on: interview invites and any updates on job application status.
     5. If the list is empty or no job emails exist, clearly state: 'Your inbox is clear of job updates for today.'""",
     expected_output="A clear, bulleted summary of job updates and urgent actions. withe name of company, role, and next steps if any including which company/organisation sent the email.",
     agent=career_agent,
