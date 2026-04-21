@@ -34,7 +34,7 @@ if __name__ == "__main__":
     service = authenticate_gmail()
     print("Successfully connected to Gmail!")
 
-    # Let's test it by listing your labels (Inbox, Sent, etc.)
-    results = service.users().labels().list(userId="me").execute()
-    labels = results.get("labels", [])
-    print(f"Found {len(labels)} labels in your account.")
+    # test it by listing labels (Inbox, Sent, etc.)
+    # results = service.users().labels().list(userId="me").execute()
+    # labels = results.get("labels", [])
+    # print(f"Found {len(labels)} labels in your account.")
